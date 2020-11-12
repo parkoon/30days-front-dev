@@ -12,3 +12,15 @@
    ```
 
    width 만 380px 주게 되면 사이즈를 줄였을 때 잘리는 현상 발생, 따라서, width: 100% 와 max-width: 380px 조합으로 처리한다.
+
+2. 폼 곂치기
+
+   ```css
+   // 부모
+   display: grid;
+   gird-template-colums: 1fr
+
+   // 자식
+   grid-column: 1 / 2;
+   grid-rows: 1 / 2
+   ```
