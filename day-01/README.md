@@ -24,3 +24,6 @@
    grid-column: 1 / 2;
    grid-rows: 1 / 2
    ```
+
+3. z-index
+   - postion (relative, absolute, fixed) 속성이 적용된 요소에만 작동한다
