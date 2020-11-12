@@ -1,3 +1,7 @@
+## Demo
+
+> https://parkoon.github.io/30days-front-dev/day-01/
+
 ## Note
 
 1. width 처리하기
