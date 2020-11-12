@@ -27,11 +27,23 @@ input {
   left: 0;
 }
 
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
 }
 
 .title {
