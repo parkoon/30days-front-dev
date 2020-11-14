@@ -7,7 +7,7 @@ import { Wrapper } from './styles'
 
 type TextInputProps = {
   icon: 'username' | 'password' | 'email'
-  style: CSSProperties
+  style?: CSSProperties
 } & HTMLProps<HTMLInputElement>
 
 function TextInput({ icon, style, ...props }: TextInputProps) {
