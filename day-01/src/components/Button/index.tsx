@@ -4,6 +4,7 @@ import { Wrapper } from './styles'
 
 export type ButtonProps = {
   children: React.ReactNode
+  outlined?: boolean
 }
 
 function Button({ children, ...props }: ButtonProps) {
