@@ -5,10 +5,14 @@ import TextInput from '../TextInput'
 import Button from '../Button'
 import SocialLoginField from '../SocialLoginField'
 
-function SignForm() {
+
+type SignFormProps = {
+  isSignInMode: boolean
+}
+function SignForm({ isSignInMode }: SignFormProps) {
   return (
-    <Wrapper>
-      <FormWrapper visible={false}>
+    <Wrapper isSignInMode={isSignInMode}>
+      <FormWrapper visible={isSignInMode}>
         <h3>Sign in</h3>
         <TextInput
           icon="user"
@@ -27,7 +31,7 @@ function SignForm() {
 
         <SocialLoginField />
       </FormWrapper>
-      <FormWrapper visible={true}>
+      <FormWrapper visible={!isSignInMode}>
         <h3>Sign up</h3>
         <TextInput
           icon="user"
