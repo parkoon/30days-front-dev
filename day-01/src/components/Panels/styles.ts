@@ -1,11 +1,14 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div``
 
-export const Column = styled.div`
-  display: flex;
+const Column = styled.div<{ visible: boolean }>`
+
+  display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
+  
+  text-align: center;
 
   width: 50%;
 
@@ -14,8 +17,36 @@ export const Column = styled.div`
   }
 `
 
+export const LeftColumn = styled(Column)`
+  img, div {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+
+  ${({ visible }) => visible && css`
+    img, div {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  `}
+`
+
+export const RightColumn = styled(Column)`
+  img, div {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+
+  ${({ visible }) => visible && css`
+    img, div {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  `}
+`
+
 export const Content = styled.div`
-  background: red;
+  padding: 3rem 17% 2rem 12%;
   h3 {
     font-weight: 600;
     font-size: 1.5rem;

@@ -1,16 +1,13 @@
 import React from 'react'
 
-import { Wrapper, Column, Content } from './styles'
+import { Wrapper, LeftColumn, RightColumn, Content } from './styles'
 import Button from '../Button'
 
-{
-  /* <img src="img/log.svg" class="image" alt="" />
-<img src="img/register.svg" class="image" alt="" /> */
-}
+
 function Panels() {
   return (
     <Wrapper>
-      <Column>
+      <LeftColumn visible={true} >
         <Content>
           <h3>New here?</h3>
           <p>
@@ -22,7 +19,20 @@ function Panels() {
         </Content>
 
         <img src="images/log.svg" alt="logo" />
-      </Column>
+      </LeftColumn>
+      <RightColumn visible={false} >
+        <Content>
+          <h3>One of us</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            ex ratione. Aliquid!
+          </p>
+
+          <Button outlined>sign in</Button>
+        </Content>
+
+        <img src="images/register.svg" alt="logo" />
+      </RightColumn>
     </Wrapper>
   )
 }
