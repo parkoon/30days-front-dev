@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   max-width: 380px;
   height: 55px;
   border-radius: 55px;
+  width: 100%;
 
   display: grid;
   grid-template-columns: 15% 85%;
