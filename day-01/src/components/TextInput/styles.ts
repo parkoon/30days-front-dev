@@ -1,34 +1,35 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 
-    max-width: 380px;
-    height: 55px;
-    border-radius: 55px;
+  max-width: 380px;
+  height: 55px;
+  border-radius: 55px;
 
-    display: grid;
-    grid-template-columns: 15% 85%;
+  display: grid;
+  grid-template-columns: 15% 85%;
 
-    padding: 0 0.4rem; 
+  padding: 0 0.4rem;
 
-    svg {
-        align-self: center;
-        justify-self: center;
-        color: #acacac;
+  i {
+    font-size: 1.1rem;
+    line-height: 55px;
+    text-align: center;
+    color: #acacac;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+
+    &::placeholder {
+      color: #aaa;
+      font-weight: 500;
     }
-
-    input {
-        border: none;
-        outline: none;
-        background: none;
-        font-weight: 600;
-        font-size: 1.1rem;
-        color: #333;
-
-        &::placeholder {
-            color: #aaa;
-            font-weight: 500;
-        }
-    }
+  }
 `

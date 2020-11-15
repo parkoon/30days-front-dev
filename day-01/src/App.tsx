@@ -9,9 +9,9 @@ function App() {
       <Button>login</Button>
       <Button outlined>login</Button>
 
-      <TextInput icon="email" type="text" placeholder="Email" />
-      <TextInput icon="password" type="text" placeholder="Password" />
-      <TextInput icon="username" type="text" placeholder="Username" />
+      <TextInput icon="envelope" type="text" placeholder="Email" />
+      <TextInput icon="lock" type="text" placeholder="Password" />
+      <TextInput icon="user" type="text" placeholder="Username" />
 
       <SocialIcon icon="facebook-f" />
     </div>
