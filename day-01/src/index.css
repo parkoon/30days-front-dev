@@ -1,11 +1,11 @@
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* input -> placeholder font */
 body,
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
